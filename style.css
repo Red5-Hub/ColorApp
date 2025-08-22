@@ -1,0 +1,61 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.color-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0;
+  transition: background-color 1s ease-in-out;
+}
+
+.color-info {
+  width: 70vw;
+  height: 70vh;
+  padding: 26px;
+  background-color: inherit;
+  border-radius: 30px;
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.48);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  position: relative;
+  transition: background-color 3s ease-in-out;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.096) 0%, rgba(255, 255, 255, 0.0) 80%, rgba(0, 0, 0, 0.14) 96%);
+}
+
+.color-hex,
+.color-rgb {
+  font-style: italic;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+
+.color-name {
+  font-size: 26px;
+  font-weight: lighter;
+  text-align: left;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.color-info.light-text {
+  color: rgba(0, 0, 0, 0.3);
+  /* Color del texto en fondos claros */
+}
+
+.color-info.dark-text {
+  color: rgba(255, 255, 255, 0.3);
+  /* Color del texto en fondos oscuros */
+}
